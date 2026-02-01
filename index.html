@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <p>Luis <span class="redspan">Motta</span></p>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#skills">Skills</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div>
+            <button class="contato"><a href="#contato">Entre em Contato</a></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="primeira" id="home">
+            <video autoplay muted loop playsinline>
+                <source src="red-background.mp4" type="video/mp4" />
+            </video>
+
+            <div class="titulo reveal">
+                <h1>Luis Motta</h1>
+                <h3>Bem-Vindo ao meu Portfolio</h3>
+            </div>
+
+            <div class="icones reveal">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="paisobre">
+                <div class="imagem reveal"><img src="/imagens/darth vader.jpg" alt=""></div>
+                <div class="texto1 reveal">
+                    <h2>Sobre Mim</h2>
+                    <h4>Desenvolvedor Web</h4>
+                    <p>
+                        Eu sou desenvolvedor web focado em front-end, criando interfaces modernas,
+                        responsivas e funcionais com atenção aos detalhes e à experiência do usuário.
+                    </p>
+                    <button class="contato"><a href="#contato">Entre em Contato</a></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="segunda" id="skills">
+            <div class="skillstexto reveal">
+                <h2>Skills</h2>
+            </div>
+
+            <div class="carousel reveal">
+                <div class="carousel-track">
+                    <div class="cards"><img src="/imagens/html.svg" alt="html">
+                        <p>HTML</p>
+                    </div>
+                    <div class="cards"><img src="/imagens/css.svg" alt="css">
+                        <p>CSS 3</p>
+                    </div>
+                    <div class="cards"><img src="/imagens/javascript.svg" alt="javascript">
+                        <p>JAVASCRIPT</p>
+                    </div>
+                    <div class="cards"><img src="/imagens/wordpress.svg" alt="wordpress">
+                        <p>WORDPRESS</p>
+                    </div>
+                    <div class="cards"><img src="/imagens/php.svg" alt="php">
+                        <p>PHP</p>
+                    </div>
+                    <div class="cards"><img src="/imagens/react.svg" alt="react">
+                        <p>REACT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contatosecao" id="contato">
+            <div class="paicontato">
+                <div class="contato1 reveal">
+                    <h2>Entre em Contato</h2>
+
+                    <form class="form-contato">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="contato">Enviar Mensagem</button>
+                    </form>
+                </div>
+
+                <div class="contato2 reveal"><img src="/imagens/batman.jpg" alt=""></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados • Luis Motta • 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
