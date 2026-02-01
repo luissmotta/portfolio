@@ -167,6 +167,22 @@ header {
     text-align: center;
 }
 
+.email {
+    position: absolute;
+    z-index: 150;
+    width: 100%;
+    display: flex;
+    bottom: 9%;
+    left: 0;
+    padding-left: 62.5px;
+    justify-content: flex-start;
+}
+
+.email a {
+    font-size: 16px;
+    font-weight: 300;
+}
+
 .icones {
     position: absolute;
     display: flex;
@@ -458,6 +474,20 @@ footer {
 }
 
 .icones i:hover {
+    transform: translateY(-6px) scale(1.08);
+    color: #ff4d4d;
+    text-shadow: 0 0 14px rgba(255, 0, 0, 0.6);
+}
+
+.email a {
+    cursor: pointer;
+    transition:
+        transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+        color 0.35s ease,
+        text-shadow 0.35s ease;
+}
+
+.email a:hover {
     transform: translateY(-6px) scale(1.08);
     color: #ff4d4d;
     text-shadow: 0 0 14px rgba(255, 0, 0, 0.6);
